@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firstLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="First Number"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"></TextView>
+
+    <EditText
+        android:id="@+id/firstText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/firstLabel"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"></EditText>
+
+    <TextView
+        android:id="@+id/secondLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Second Number"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/firstText"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"></TextView>
+
+    <EditText
+        android:id="@+id/secondText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/secondLabel"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"></EditText>
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Result"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/secondText"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"></TextView>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="16dp"
+        android:hint="TextView"
+        app:layout_constraintLeft_toRightOf="@+id/resultLabel"
+        app:layout_constraintTop_toBottomOf="@id/secondText"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        />
+
+    <Button
+        android:id="@+id/substraction"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="-"
+        app:layout_constraintLeft_toRightOf="@id/addition"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="*"
+        app:layout_constraintLeft_toRightOf="@id/substraction"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="/"
+        app:layout_constraintLeft_toRightOf="@id/multiplication"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
